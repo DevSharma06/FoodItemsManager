@@ -3,7 +3,8 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Android/Projects/FoodItemsManager/app/src/main/res/layout/activity_food_amount_layout.xml" value="0.1" />
+        <entry key="..\:/Android/Projects/FoodItemsManager/app/src/main/res/drawable/ic_baseline_local_grocery_store_24.xml" value="0.2195" />
+        <entry key="..\:/Android/Projects/FoodItemsManager/app/src/main/res/layout/activity_food_amount_layout.xml" value="0.16" />
         <entry key="..\:/Android/Projects/FoodItemsManager/app/src/main/res/layout/activity_main.xml" value="0.264" />
         <entry key="..\:/Android/Projects/FoodItemsManager/app/src/main/res/layout/add_item_layout.xml" value="0.1" />
         <entry key="..\:/Android/Projects/FoodItemsManager/app/src/main/res/layout/food_item_layout.xml" value="0.264" />
