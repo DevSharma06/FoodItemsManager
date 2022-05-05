@@ -5,15 +5,12 @@ import com.durja.fooditemsmanager.FoodItemsAdapter.FoodItemViewHolder
 import com.durja.fooditemsmanager.db.FoodItem
 import android.view.ViewGroup
 import android.view.LayoutInflater
-import com.durja.fooditemsmanager.R
-import android.content.Intent
 import android.text.Editable
 import android.text.TextWatcher
 import android.view.View
 import android.widget.EditText
 import android.widget.TextView
 import androidx.databinding.DataBindingUtil
-import com.durja.fooditemsmanager.FoodAmountActivity
 import com.durja.fooditemsmanager.databinding.FoodItemLayoutBinding
 import com.google.android.material.bottomsheet.BottomSheetDialog
 import java.lang.String
@@ -76,7 +73,7 @@ class FoodItemsAdapter(
 
     private fun showBottomSheetDialog(view: View, foodItem: FoodItem) {
         val bottomSheetDialog = BottomSheetDialog(view.context)
-        bottomSheetDialog.setContentView(R.layout.activity_food_amount_layout)
+        bottomSheetDialog.setContentView(R.layout.food_bottom_sheet_dialog)
 
         val foodNameTextView: TextView? = bottomSheetDialog.findViewById(R.id.food_name_textView)
         val oneKgTextView: TextView? = bottomSheetDialog.findViewById(R.id.one_kg_textView)
