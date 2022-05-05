@@ -12,24 +12,63 @@
             android:id="@+id/food_name_textView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="10dp"
+            android:textColor="@color/black"
             android:textSize="24sp"
             android:textStyle="bold"
-            android:textColor="@color/black"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            android:layout_marginTop="20dp"/>
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <LinearLayout
+            android:id="@+id/header_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/header_background"
+            android:orientation="horizontal"
+            android:padding="8dp"
+            android:weightSum="2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/food_name_textView">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Units"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/amount_textView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_weight="1"
+                android:text="Amount"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
 
         <LinearLayout
             android:id="@+id/one_kg_layout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="15dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
             android:orientation="horizontal"
+            android:padding="8dp"
             android:weightSum="2"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/food_name_textView">
+            app:layout_constraintTop_toBottomOf="@id/header_layout">
 
             <TextView
                 android:layout_width="0dp"
@@ -43,11 +82,11 @@
                 android:id="@+id/one_kg_textView"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
                 android:layout_weight="1"
                 android:text=""
                 android:textColor="@color/black"
-                android:textSize="16sp"
-                android:layout_marginStart="5dp"/>
+                android:textSize="16sp" />
 
         </LinearLayout>
 
@@ -55,9 +94,12 @@
             android:id="@+id/half_kg_layout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="15dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
             android:orientation="horizontal"
+            android:padding="8dp"
             android:weightSum="2"
+            android:background="@color/primaryVeryLightColor"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/one_kg_layout">
@@ -74,11 +116,11 @@
                 android:id="@+id/half_kg_textView"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
                 android:layout_weight="1"
                 android:text=""
                 android:textColor="@color/black"
-                android:textSize="16sp"
-                android:layout_marginStart="5dp"/>
+                android:textSize="16sp" />
 
         </LinearLayout>
 
@@ -86,8 +128,10 @@
             android:id="@+id/quarter_kg_layout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="15dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
             android:orientation="horizontal"
+            android:padding="8dp"
             android:weightSum="2"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -105,11 +149,11 @@
                 android:id="@+id/quarter_kg_textView"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
                 android:layout_weight="1"
                 android:text=""
                 android:textColor="@color/black"
-                android:textSize="16sp"
-                android:layout_marginStart="5dp"/>
+                android:textSize="16sp" />
 
         </LinearLayout>
 
@@ -117,9 +161,12 @@
             android:id="@+id/half_quarter_kg_layout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="15dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
             android:orientation="horizontal"
+            android:padding="8dp"
             android:weightSum="2"
+            android:background="@color/primaryVeryLightColor"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/quarter_kg_layout">
@@ -136,11 +183,11 @@
                 android:id="@+id/half_quarter_kg_textView"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
                 android:layout_weight="1"
                 android:text=""
                 android:textColor="@color/black"
-                android:textSize="16sp"
-                android:layout_marginStart="5dp"/>
+                android:textSize="16sp" />
 
         </LinearLayout>
 
@@ -148,8 +195,10 @@
             android:id="@+id/hundred_gm_layout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="15dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
             android:orientation="horizontal"
+            android:padding="8dp"
             android:weightSum="2"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -167,11 +216,11 @@
                 android:id="@+id/hundred_gm_textView"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
                 android:layout_weight="1"
                 android:text=""
                 android:textColor="@color/black"
-                android:textSize="16sp"
-                android:layout_marginStart="5dp"/>
+                android:textSize="16sp" />
 
         </LinearLayout>
 
@@ -179,9 +228,12 @@
             android:id="@+id/fifty_gm_layout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="15dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
             android:orientation="horizontal"
+            android:padding="8dp"
             android:weightSum="2"
+            android:background="@color/primaryVeryLightColor"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/hundred_gm_layout">
@@ -198,11 +250,11 @@
                 android:id="@+id/fifty_gm_textView"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
                 android:layout_weight="1"
                 android:text=""
                 android:textColor="@color/black"
-                android:textSize="16sp"
-                android:layout_marginStart="5dp"/>
+                android:textSize="16sp" />
 
         </LinearLayout>
 
@@ -210,19 +262,23 @@
             android:id="@+id/calculation_layout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="15dp"
-            android:orientation="horizontal"
-            android:weightSum="2"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
             android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="8dp"
+            android:weightSum="2"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/fifty_gm_layout">
 
             <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+                app:boxStrokeColor="@color/primaryColor"
+                app:hintTextColor="@color/primaryColor">
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/amount_edittext"
@@ -230,7 +286,7 @@
                     android:layout_height="wrap_content"
                     android:hint="Enter Amount"
                     android:inputType="number"
-                    android:maxLength="5"/>
+                    android:maxLength="5" />
 
             </com.google.android.material.textfield.TextInputLayout>
 
@@ -238,11 +294,12 @@
                 android:id="@+id/grams_textView"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
                 android:layout_weight="1"
+                android:padding="8dp"
                 android:text=""
                 android:textColor="@color/black"
-                android:textSize="16sp"
-                android:layout_marginStart="5dp"/>
+                android:textSize="16sp" />
 
         </LinearLayout>
 

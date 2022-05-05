@@ -44,13 +44,13 @@ class FoodAmountActivity : AppCompatActivity() {
 
     private fun getDataAndSetFoodItem(foodItem: FoodItem?) {
         if (foodItem != null) {
-            binding.foodNameTextView.text = foodItem.foodName
-            binding.oneKgTextView.text = String.valueOf(foodItem.oneKgAmount)
-            binding.halfKgTextView.text = String.valueOf(foodItem.halfKgAmount)
-            binding.quarterKgTextView.text = String.valueOf(foodItem.quarterKgAmount)
-            binding.halfQuarterKgTextView.text = String.valueOf(foodItem.halfQuarterKgAmount)
-            binding.hundredGmTextView.text = String.valueOf(foodItem.hundredGramsAmount)
-            binding.fiftyGmTextView.text = String.valueOf(foodItem.fiftyGramsAmount)
+            binding.foodNameTextView.text = "Item name: " + foodItem.foodName
+            binding.oneKgTextView.text = String.valueOf("Rs: ${foodItem.oneKgAmount}")
+            binding.halfKgTextView.text = String.valueOf("Rs: ${foodItem.halfKgAmount}")
+            binding.quarterKgTextView.text = String.valueOf("Rs: ${foodItem.quarterKgAmount}")
+            binding.halfQuarterKgTextView.text = String.valueOf("Rs: ${foodItem.halfQuarterKgAmount}")
+            binding.hundredGmTextView.text = String.valueOf("Rs: ${foodItem.hundredGramsAmount}")
+            binding.fiftyGmTextView.text = String.valueOf("Rs: ${foodItem.fiftyGramsAmount}")
         }
     }
 
